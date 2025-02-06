@@ -15,7 +15,7 @@ from datetime import datetime, timedelta, timezone
 MONGO_URI = 'mongodb+srv://Kamisama:Kamisama@kamisama.m6kon.mongodb.net'
 client = MongoClient(MONGO_URI)
 db = client['Kamisama']
-users_collection = db['SHANKNBV']
+users_collection = db['SHANKNBBHV']
 settings_collection = db['settings0']  # A new collection to store global settings
 redeem_codes_collection = db['redeem_codes0']
 
